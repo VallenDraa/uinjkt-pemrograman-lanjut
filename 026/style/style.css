@@ -68,9 +68,7 @@ ul#navmenu a {
   cursor: pointer;
 }
 
-ul#navmenu a:hover,
-ul#navmenu a:focus,
-ul#navmenu a:active {
+:where(ul#navmenu a):where(:hover, :focus :active) {
   background-color: #333;
   color: #fff;
 }
@@ -80,9 +78,7 @@ ul#navmenu a.selected {
   cursor: default;
 }
 
-ul#navmenu a.selected,
-ul#navmenu a.selected:focus,
-ul#navmenu a.selected:active {
+:where(ul#navmenu a.selected):where(:focus, :active) {
   background-color: #386088;
   color: #fff;
 }
