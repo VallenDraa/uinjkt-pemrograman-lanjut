@@ -31,6 +31,7 @@ body {
 
 /* pengaturan side panel */
 #sidebar {
+  align-self: flex-start;
   border: #0000ff dashed 1px;
   margin-top: 10px;
   width: 150px;
