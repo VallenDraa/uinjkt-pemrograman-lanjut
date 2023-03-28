@@ -20,14 +20,21 @@
         <h3>navigasi</h3>
         <ul id="navmenu">
           <li><a href="index.php" class="selected">Profil</a></li>
-          <li><a href="konten/galeri.php">Galeri</a></li>
-          <li><a href="konten/jadwal.php">Jadwal Kuliah</a></li>
+          <li><a href="?module=galeri">Galeri</a></li>
+          <li><a href="?module=jadwal">Jadwal Kuliah</a></li>
         </ul>
       </div>
 
       <div id="page">
-        Ini Halaman Utama
-        <h2>&nbsp;</h2>
+        <?php
+        if (isset($_GET["module"])) {
+          $namaFile = $_GET["module"];
+
+          include "konten/$namaFile.php";
+        } else {
+          include "konten/home.php";
+        }
+        ?>
       </div>
     </div>
 
