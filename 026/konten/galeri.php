@@ -1,14 +1,20 @@
-<div>
-  <p>Ini Halaman Galeri Dengan Gambar Rubik</p>
-  <img src="./images/rubik.jpeg" width="145" height="117">
-</div>
+<h2 class="page__title">
+  Halaman galeri
+</h2>
 
-<div>
-  <p>Ini Halaman Galeri Dengan Gambar Burung</p>
-  <img src="./images/burung.jpeg" width="145" height="117">
-</div>
+<div class="galeri">
+  <figure class="galeri__item">
+    <img src="./images/rubik.jpeg">
+    <figcaption>Gambar Rubik</figcaption>
+  </figure>
 
-<div>
-  <p>Ini Halaman Galeri Dengan Gambar Sunset</p>
-  <img src="./images/sungset.jpeg" width="145" height="117">
+  <figure class="galeri__item">
+    <img src="./images/tint-color.gif">
+    <figcaption>Gif Bohemian Rhapsody</figcaption>
+  </figure>
+
+  <figure class="galeri__item">
+    <img src="./images/sungset.jpeg">
+    <figcaption>Gambar Sunset</figcaption>
+  </figure>
 </div>

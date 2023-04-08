@@ -1,0 +1,9 @@
+.page__wrapper {
+  padding-block: 16px;
+}
+
+.page__title {
+  font-size: x-large;
+  font-weight: 600;
+  margin-bottom: 16px;
+}

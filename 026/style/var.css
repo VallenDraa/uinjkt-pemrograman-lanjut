@@ -1,0 +1,27 @@
+:root {
+  --clr-translucent: rgba(255, 255, 255, 0.2);
+
+  --clr-primary-100: #f9fafb;
+  --clr-primary-200: #f3f4f6;
+  --clr-primary-300: #9ca3af;
+
+  --clr-secondary-200: #1f2937;
+  --clr-secondary-300: #111827;
+  --clr-secondary-100: #374151;
+
+  --clr-brand-100: #38bdf8;
+  --clr-brand-200: #2dd4bf;
+  --clr-brand-300: #818cf8;
+}
+
+.dark {
+  --clr-translucent: rgba(0, 0, 0, 0.2);
+
+  --clr-primary-100: #374151;
+  --clr-primary-200: #1f2937;
+  --clr-primary-300: #111827;
+
+  --clr-secondary-100: #f9fafb;
+  --clr-secondary-200: #f3f4f6;
+  --clr-secondary-300: #9ca3af;
+}

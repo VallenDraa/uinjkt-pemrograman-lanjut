@@ -1,0 +1,36 @@
+@import "../var.css";
+
+.jadwal {
+  overflow: auto;
+}
+
+.jadwal__table {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--clr-brand-300);
+  overflow: auto;
+}
+
+.jadwal__head {
+  background-color: var(--clr-brand-300);
+}
+
+.jadwal__head td {
+  padding: 10px;
+  font-size: medium;
+  font-weight: bold;
+  color: var(--clr-primary-200);
+}
+
+.jadwal__row td {
+  font-size: medium;
+  padding: 10px;
+}
+
+.jadwal__row:nth-of-type(odd) {
+  background-color: var(--clr-primary-200);
+}
+
+.jadwal__row:nth-of-type(even) {
+  background-color: var(--clr-primary-100);
+}
