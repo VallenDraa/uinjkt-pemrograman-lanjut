@@ -15,16 +15,14 @@
   background-color: var(--clr-brand-300);
 }
 
-.jadwal__head td {
+.jadwal__cell {
   padding: 10px;
   font-size: medium;
-  font-weight: bold;
-  color: var(--clr-primary-200);
 }
 
-.jadwal__row td {
-  font-size: medium;
-  padding: 10px;
+.jadwal__head .jadwal__cell {
+  font-weight: bold;
+  color: var(--clr-primary-200);
 }
 
 .jadwal__row:nth-of-type(odd) {

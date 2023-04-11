@@ -9,7 +9,6 @@ function link_terpilih(string $nama_link = "", bool $is_index = false)
     return "";
   }
 
-
   return $_GET["module"] === $nama_link ?
     "link--selected" : "";
 }
@@ -25,14 +24,14 @@ function link_terpilih(string $nama_link = "", bool $is_index = false)
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style/style.css" />
-  <title>Sistem Pakar</title>
+  <title>Pemrograman Lanjut</title>
 </head>
 
 <body>
   <!-- nav -->
   <header class="heading">
     <div class="heading__wrapper container">
-      <h1 class="heading__title">Sistem Pakar</h1>
+      <h1 class="heading__title">Pemrograman Lanjut</h1>
       <nav class="heading__nav">
         <a href="index.php" class="link heading__link <?= link_terpilih("", true) ?>">Profil</a>
         <a href="?module=galeri" class="link heading__link <?= link_terpilih("galeri") ?>">Galeri</a>

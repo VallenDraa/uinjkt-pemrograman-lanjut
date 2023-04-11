@@ -2,39 +2,39 @@
 
 <div class="jadwal">
   <table class="jadwal__table">
-    <thead class="jadwal__head">
-      <td>No</td>
-      <td>Mata Kuliah</td>
-      <td>Hari</td>
-      <td>Waktu</td>
-    </thead>
-
-    <tr class="jadwal__row">
-      <td>1</td>
-      <td>Web Programming</td>
-      <td>Rabu</td>
-      <td>18.30-20.00</td>
+    <tr class="jadwal__head">
+      <td class="jadwal__cell">No</td>
+      <td class="jadwal__cell">Mata Kuliah</td>
+      <td class="jadwal__cell">Hari</td>
+      <td class="jadwal__cell">Waktu</td>
     </tr>
 
     <tr class="jadwal__row">
-      <td>2</td>
-      <td>Bahasa Arab</td>
-      <td>Rabu</td>
-      <td>20.00-21.30</td>
+      <td class="jadwal__cell">1</td>
+      <td class="jadwal__cell">Web Programming</td>
+      <td class="jadwal__cell">Rabu</td>
+      <td class="jadwal__cell">18.30-20.00</td>
     </tr>
 
     <tr class="jadwal__row">
-      <td>3</td>
-      <td>Algoritma</td>
-      <td>Kamis</td>
-      <td>20.00-21.30</td>
+      <td class="jadwal__cell">2</td>
+      <td class="jadwal__cell">Bahasa Arab</td>
+      <td class="jadwal__cell">Rabu</td>
+      <td class="jadwal__cell">20.00-21.30</td>
     </tr>
 
     <tr class="jadwal__row">
-      <td>4</td>
-      <td>Penelusuran Informasi</td>
-      <td>Jumat</td>
-      <td>20.00-21.30</td>
+      <td class="jadwal__cell">3</td>
+      <td class="jadwal__cell">Algoritma</td>
+      <td class="jadwal__cell">Kamis</td>
+      <td class="jadwal__cell">20.00-21.30</td>
+    </tr>
+
+    <tr class="jadwal__row">
+      <td class="jadwal__cell">4</td>
+      <td class="jadwal__cell">Penelusuran Informasi</td>
+      <td class="jadwal__cell">Jumat</td>
+      <td class="jadwal__cell">20.00-21.30</td>
     </tr>
   </table>
 </div>
