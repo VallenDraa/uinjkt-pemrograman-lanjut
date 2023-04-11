@@ -1,118 +1,190 @@
+:root {
+  --clr-dark-300-half: #0f172aa1;
+
+  --clr-dark-300: #0f172a;
+  --clr-dark-200: #1e293b;
+  --clr-dark-100: #475569;
+
+  --clr-brand-100: #2dd4bf;
+  --clr-brand-200: #0d9488;
+
+  --clr-light-100: #f8fafc;
+  --clr-light-200: #e2e8f0;
+  --clr-light-300: #cbd5e1;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Default */
+html {
+  height: 100%;
+}
+
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--clr-light-200);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 12px;
+  margin: 0;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 }
 
 /* pengaturan halaman */
-#container {
-  width: 1000px;
-  font-size: 90%;
-  margin: auto;
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin-inline: auto;
 }
 
 /* pengaturan header */
-#header {
-  height: 75px;
-  border: #0000ff dashed 1px;
-  background-color: #99ccff;
-  background-image: url("../images/NEON-TEXT.gif");
-  background-position: center -40px;
-}
-
-#header h1 {
-  width: 100%;
+header {
+  padding: 12px;
+  backdrop-filter: blur(20px);
+  background-color: var(--clr-dark-300-half);
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(2px);
-  height: 100%;
-  color: #003399;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+}
+
+header h1 {
+  font-weight: 800;
+  text-align: center;
+  color: var(--clr-light-200);
+}
+
+main {
+  gap: 12px;
+  display: flex;
+  margin-top: 10px;
 }
 
 /* pengaturan side panel */
-#sidebar {
+aside {
+  position: sticky;
+  top: 12px;
   align-self: flex-start;
-  border: #0000ff dashed 1px;
-  margin-top: 10px;
   width: 150px;
-  background-color: #99ccff;
+  padding: 10px;
+  backdrop-filter: blur(20px);
+  background-color: var(--clr-dark-300-half);
+  border-radius: 6px;
 }
 
-#sidebar h3 {
-  color: #993300;
-  padding-left: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+aside h2 {
+  font-weight: 800;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--clr-light-200);
 }
 
 /* pengaturan menu navigasi */
-ul#navmenu {
+nav {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-ul#navmenu li {
-  margin-bottom: 5px;
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-ul#navmenu a {
+nav a {
   display: block;
   width: auto;
   height: auto;
-  background-color: #003366;
-  padding: 5px 5px 3px;
+  border-radius: 3px;
+  background-color: var(--clr-dark-100);
+  padding: 5px 10px;
   text-align: left;
   text-decoration: none;
-  color: #eecc11;
+  color: var(--clr-light-300);
   cursor: pointer;
 }
 
-ul#navmenu a:where(:hover, :focus, :active) {
-  background-color: #333;
-  color: #fff;
+nav a:where(:hover, :focus, :active) {
+  background-color: var(--clr-brand-100);
+  color: var(--clr-dark-100);
 }
 
-ul#navmenu a.selected {
+nav a.selected {
+  background-color: var(--clr-brand-200);
   text-align: right;
   cursor: default;
 }
 
-ul#navmenu a.selected:where(:hover, :focus, :active) {
-  background-color: #386088;
-  color: #fff;
+nav a.selected:where(:hover, :focus, :active) {
+  background-color: var(--clr-brand-200);
+  color: var(--clr-dark-300);
 }
 
 /* pengaturan content */
 #page {
-  border: #0000ff dashed 1px;
-  margin-top: 10px;
-  margin-left: 10px;
+  border-radius: 6px;
+  backdrop-filter: blur(20px);
+  background-color: var(--clr-dark-300-half);
   padding: 10px;
-  width: 815px;
+  width: 100%;
+  height: 100%;
   align-self: flex-start;
 }
 
 #page h2 {
   color: #993300;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 
 img {
   border: none;
 }
 
-#footer {
-  border: #0000ff dashed 1px;
-  margin-top: 10px;
-  text-align: center;
-  background-color: #99ccff;
+footer {
+  background-image: url("../images/SHINING-TEXT.gif");
+  background-size: 200px;
+  background-position: center;
+  margin-top: auto;
+  background-color: var(--clr-dark-200);
+  padding-block: 16px;
 }
 
-#flex-wrapper {
-  display: flex;
+.footer__copyright {
+  text-align: center;
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-weight: 800;
+  backdrop-filter: blur(2px);
+  color: var(--clr-light-300);
 }

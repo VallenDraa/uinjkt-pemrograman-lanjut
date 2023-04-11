@@ -10,38 +10,36 @@
 </head>
 
 <body>
-  <div id="container">
-    <div id="header">
-      <h1>Pemrograman Lanjut</h1>
-    </div>
+  <header>
+    <h1 class="container">Pemrograman Lanjut</h1>
+  </header>
 
-    <div id="flex-wrapper">
-      <div id="sidebar">
-        <h3>navigasi</h3>
-        <ul id="navmenu">
-          <li><a href="index.php" class="selected">Profil</a></li>
-          <li><a href="?module=galeri">Galeri</a></li>
-          <li><a href="?module=jadwal">Jadwal Kuliah</a></li>
-        </ul>
-      </div>
+  <main class="container">
+    <aside>
+      <h2>Navigasi</h2>
+      <nav>
+        <a href="index.php" class="selected">Profil</a>
+        <a href="?module=galeri">Galeri</a>
+        <a href="?module=jadwal">Jadwal Kuliah</a>
+      </nav>
+    </aside>
 
-      <div id="page">
-        <?php
-        if (isset($_GET["module"])) {
-          $namaFile = $_GET["module"];
+    <section id="page">
+      <?php
+      if (isset($_GET["module"])) {
+        $namaFile = $_GET["module"];
 
-          include "konten/$namaFile.php";
-        } else {
-          include "unpam/index.php";
-        }
-        ?>
-      </div>
-    </div>
+        include "konten/$namaFile.php";
+      } else {
+        include "unpam/index.php";
+      }
+      ?>
+    </section>
+  </main>
 
-    <div id="footer">
-      <p>&copy; 2010</p>
-    </div>
-  </div>
+  <footer>
+    <span class="footer__copyright">&copy; 2023 | UIN Jakarta</span>
+  </footer>
 </body>
 
 </html>
