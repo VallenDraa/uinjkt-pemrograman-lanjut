@@ -12,7 +12,7 @@
 <body>
   <div id="container">
     <div id="header">
-      <h1>PERTEMUAN I -- SISTEM PAKAR</h1>
+      <h1>Pemrograman Lanjut</h1>
     </div>
 
     <div id="flex-wrapper">
@@ -32,7 +32,7 @@
 
           include "konten/$namaFile.php";
         } else {
-          include "konten/home.php";
+          include "unpam/index.php";
         }
         ?>
       </div>

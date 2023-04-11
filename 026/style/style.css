@@ -13,17 +13,20 @@ body {
 
 /* pengaturan header */
 #header {
-  padding: 10px;
   height: 75px;
   border: #0000ff dashed 1px;
   background-color: #99ccff;
+  background-image: url("../images/NEON-TEXT.gif");
+  background-position: center -40px;
 }
 
 #header h1 {
-  display: block;
-  width: 815px;
-  height: 110px;
-  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  height: 100%;
   color: #003399;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
