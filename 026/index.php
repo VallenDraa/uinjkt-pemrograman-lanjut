@@ -19,7 +19,7 @@
       <h2>Navigasi</h2>
       <nav>
         <a href="index.php" class="selected">Profil</a>
-        <a href="?module=galeri">Galeri</a>
+        <a href="?module=lihat">View Data</a>
         <a href="?module=jadwal">Jadwal Kuliah</a>
       </nav>
     </aside>
@@ -31,7 +31,7 @@
 
         include "konten/$namaFile.php";
       } else {
-        include "unpam/index.php";
+        include "konten/index.php";
       }
       ?>
     </section>

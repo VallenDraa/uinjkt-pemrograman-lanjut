@@ -1,10 +1,16 @@
+<form action="konten/cari.php" method="GET">
+    <h2>Cari User</h2>
+    <input type="text" name="username">
+    <button>Cari</button>
+</form>
 
 <form action="./unpam/register.php" method="POST">
     <p>&nbsp;</p>
 
     <div style="text-align: center; font-weight: bold;">
-        <p>REGISTER</p>
+        <h1>REGISTER</h1>
     </div>
+
 
     <table width="496" border="0" align="center">
         <tr>
@@ -66,6 +72,9 @@
             <td>
                 <button>Submit</button>
             </td>
+        </tr>
+        <tr>
+            <td><a href="?module=lihat">Lihat Member ---></a></td>
         </tr>
     </table>
 </form>
