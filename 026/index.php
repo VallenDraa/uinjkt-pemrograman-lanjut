@@ -20,7 +20,7 @@
       <nav>
         <a href="index.php" class="selected">Profil</a>
         <a href="?module=lihat">View Data</a>
-        <a href="?module=jadwal">Jadwal Kuliah</a>
+        <a href="?module=cari">Jadwal Kuliah</a>
       </nav>
     </aside>
 

@@ -36,7 +36,7 @@ $hasil = mysqli_query(
     </tr>
 
     <?php
-    while ($buff = mysqli_fetch_array($hasil)) {
+    while ($buff = mysqli_fetch_assoc($hasil)) {
     ?>
       <tr>
         <td><?= $buff['id'] ?></td>

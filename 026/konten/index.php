@@ -1,6 +1,7 @@
-<form action="konten/cari.php" method="GET">
+<form action="index.php" method="GET">
     <h2>Cari User</h2>
     <input type="text" name="username">
+    <input type="hidden" name="module" value="cari">
     <button>Cari</button>
 </form>
 
