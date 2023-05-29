@@ -123,7 +123,7 @@ main {
   align-self: flex-start;
 }
 
-.navigasi h2 {
+.sidebar-title {
   font-weight: 800;
   margin-bottom: 5px;
   text-align: center;
@@ -163,7 +163,7 @@ nav {
   gap: 5px;
 }
 
-nav a {
+.link {
   display: block;
   width: auto;
   height: auto;
@@ -176,20 +176,20 @@ nav a {
   cursor: pointer;
 }
 
-nav a:where(:hover, :focus, :active) {
+.link:where(:hover, :focus, :active) {
   background-color: var(--clr-brand-100);
   color: var(--clr-dark-100);
 }
 
-nav a.selected {
+.link.selected {
   background-color: var(--clr-brand-200);
   text-align: right;
   cursor: default;
 }
 
-nav a.selected:where(:hover, :focus, :active) {
-  background-color: var(--clr-brand-200);
-  color: var(--clr-dark-300);
+.link.selected:where(:hover, :focus, :active) {
+  background-color: var(--clr-brand-100);
+  color: var(--clr-dark-300-half);
 }
 
 /* pengaturan content */
@@ -225,7 +225,7 @@ footer {
   color: var(--clr-light-300);
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 720px) {
   .sidebar {
     flex-direction: row;
   }

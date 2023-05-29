@@ -1,3 +1,19 @@
+<?php
+function link_terpilih(string $nama_link = "", bool $is_index = false)
+{
+  if (!isset($_GET["module"]) && $is_index) {
+    return "selected";
+  }
+
+  if (!isset($_GET["module"]) && !$is_index) {
+    return "";
+  }
+
+  return $_GET["module"] === $nama_link ?
+    "selected" : "";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,15 +34,15 @@
   <main class="container">
     <aside class="sidebar">
       <div class="card navigasi">
-        <h2>Navigasi</h2>
+        <h2 class="sidebar-title">Navigasi</h2>
         <nav>
-          <a href=" index.php" class="selected">Profil</a>
-          <a href="?module=lihat">View Data</a>
-          <a href="?module=cari">Jadwal Kuliah</a>
+          <a href=" index.php" class="link <?= link_terpilih("", true) ?>">Insert</a>
+          <a href="?module=lihat" class="link <?= link_terpilih("lihat") ?>">View</a>
+          <a href="?module=cari" class="link <?= link_terpilih("cari") ?>">Search</a>
         </nav>
       </div>
 
-      <form class="card login-form" method="post">
+      <form class="card login-form" action="unpam/login-proc.php" method="post">
         <div class="login-item">
           <label for="username">Username</label>
           <input type="text" name="username">

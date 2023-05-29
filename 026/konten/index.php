@@ -1,6 +1,5 @@
-<form action="index.php" method="GET">
-    <h2>Cari User</h2>
-    <input type="text" name="username">
+<form action="index.php" method="GET" style="display: flex; gap: 6px;">
+    <input placeholder="Cari user..." type="text" name="username" style="flex-grow: 1;">
     <input type="hidden" name="module" value="cari">
     <button>Cari</button>
 </form>

@@ -8,8 +8,8 @@ $hasil = mysqli_query(
   "SELECT * FROM register"
 );
 ?>
-<div style="overflow: auto;">
 
+<div style="overflow: auto;">
   <table border="1">
     <tr>
       <td>Id</td>
