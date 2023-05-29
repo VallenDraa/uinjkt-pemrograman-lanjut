@@ -9,17 +9,7 @@ $hasil = mysqli_query(
 );
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cari</title>
-</head>
-
-<body>
+<div style="overflow: auto;">
   <table border="1">
     <tr>
       <td>Id</td>
@@ -60,6 +50,4 @@ $hasil = mysqli_query(
     mysqli_close($conn);
     ?>
   </table>
-</body>
-
-</html>
+</div>

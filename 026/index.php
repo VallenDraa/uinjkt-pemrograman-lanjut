@@ -10,21 +10,37 @@
 </head>
 
 <body>
-  <header>
-    <h1 class="container">Pemrograman Lanjut</h1>
+
+  <header class="container card">
+    <h1>Pemrograman Lanjut</h1>
   </header>
 
   <main class="container">
-    <aside>
-      <h2>Navigasi</h2>
-      <nav>
-        <a href="index.php" class="selected">Profil</a>
-        <a href="?module=lihat">View Data</a>
-        <a href="?module=cari">Jadwal Kuliah</a>
-      </nav>
-    </aside>
+    <aside class="sidebar">
+      <div class="card navigasi">
+        <h2>Navigasi</h2>
+        <nav>
+          <a href=" index.php" class="selected">Profil</a>
+          <a href="?module=lihat">View Data</a>
+          <a href="?module=cari">Jadwal Kuliah</a>
+        </nav>
+      </div>
 
-    <section id="page">
+      <form class="card login-form" method="post">
+        <div class="login-item">
+          <label for="username">Username</label>
+          <input type="text" name="username">
+        </div>
+
+        <div class="login-item">
+          <label for="password">Password</label>
+          <input type="password" name="password">
+        </div>
+
+        <button>Login</button>
+      </form>
+    </aside>
+    <section id="page" class="card">
       <?php
       if (isset($_GET["module"])) {
         $namaFile = $_GET["module"];
